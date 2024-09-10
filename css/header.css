@@ -6,6 +6,7 @@
   z-index: 999;
   padding: 10px 0px;
   box-shadow: 0px 0px 10px gray;
+  background-color: white;
 }
 
 .header__list,
@@ -58,5 +59,17 @@
   }
   .header__list-show {
     left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav {
+    flex-wrap: wrap;
+  }
+  .header__logo img {
+    width: 100%;
+  }
+  .header__btns__btn {
+    font-size: 13px;
+    padding: 3px 6px;
   }
 }

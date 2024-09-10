@@ -1,0 +1,65 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.about__left__title{
+    font-size: 45px;
+}
+.about__left__desc{
+    font-size: 17px;
+    width: 500px;
+    color: gray;
+    padding: 25px 0px;
+}
+.about__left__ranks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__left__ranks__rank{
+    text-align: center;
+}
+.about__left__ranks__rank__number{
+    font-size: 33px;
+}
+@media(max-width:1200px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .about__left{
+        order: 1;
+    }
+}
+@media(max-width:676px){
+    .about__right__img img{
+        width: 100%;
+    }
+    .about__left__title{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .about__left__desc{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .about__left__ranks{
+        flex-wrap: wrap;
+    }
+ 
+}
+@media(max-width:300px){
+       .about__left__desc{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .about__left__ranks{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

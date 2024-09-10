@@ -30,3 +30,16 @@ a {
   color: white;
   box-shadow: 4px 4px 2px gray;
 }
+
+.white-btn{
+  background-color: black;
+  color: white;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.white-btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 8px 8px 2px rgb(64, 63, 63);
+  
+}

@@ -1,0 +1,170 @@
+.skills__infos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 80px 0px;
+}
+.skills__speaking__img {
+  text-align: center;
+}
+.skills__speaking__img img {
+  width: 230px;
+}
+.skills__title {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 45px;
+  opacity: 0.8;
+}
+.skills__card {
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+}
+.skills__speaking {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.skills__speaking__title {
+  font-size: 30px;
+  padding: 10px 0px;
+}
+.skills__speaking__desc {
+  font-size: 19px;
+  width: 350px;
+  padding-top: 10px;
+  color: gray;
+}
+.skills__speaking__desc2 {
+  font-size: 19px;
+  width: 350px;
+  padding: 20px 0px;
+  color: gray;
+}
+.skills__speaking__btns__btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.skills__writing__img {
+  text-align: center;
+}
+.skills__writing__img img {
+  width: 230px;
+}
+.skills__writing__title {
+  font-size: 30px;
+}
+.skills__writing__desc {
+  font-size: 19px;
+  width: 350px;
+  padding: 20px 0px;
+  color: gray;
+}
+.skills__writing__btns__btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.skills__reading__img {
+  text-align: center;
+}
+.skills__reading__img img {
+  width: 340px;
+}
+.skills__reading__title {
+  font-size: 30px;
+}
+.skills__reading__desc {
+  font-size: 19px;
+  width: 350px;
+  padding: 20px 0px;
+  color: gray;
+}
+.skills__reading__btns__btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.left {
+  order: 1;
+}
+.skills__listening__img {
+  order: 2;
+  text-align: center;
+}
+.skills__listening__img img {
+  width: 340px;
+}
+.skills__listening__title {
+  font-size: 30px;
+}
+.skills__listening__desc {
+  font-size: 19px;
+  width: 350px;
+  padding: 20px 0px;
+  color: gray;
+}
+.skills__listening__btns__btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.skills__listening {
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+@media (max-width: 1440px) {
+  .skills__infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills__listening {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills__listening__img {
+    order: 0;
+  }
+  .left {
+    order: 0;
+  }
+}
+@media (max-width: 450px) {
+  .skills__card {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .skills__reading__img img{width:100%;}
+  .skills__listening__img img{width:100%;}
+  .skills__writing__img img{width:100%;}
+  .skills__speaking__img img {
+    width:100%;
+  }
+  .skills__reading__title,
+  .skills__writing__title,
+  .skills__speaking__title,
+  .skills__listening__title {
+    font-size: 22px;
+  }
+  .skills__reading__desc,
+  .skills__writing__desc,
+  .skills__speaking__desc,
+  .skills__speaking__desc2,
+  .skills__listening__desc {
+    font-size: 13px;
+    width: 100%;
+  }
+  .skills__reading__btns__btn,
+  .skills__writing__btns__btn,
+  .skills__speaking__btns__btn,
+  .skills__listening__btns__btn {
+    font-size: 12px;
+    padding: 3px 7px;
+  }
+}
